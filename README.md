@@ -1,5 +1,2 @@
-## (WIP) Toast Notifications Vue3
-
-[]: # Language: markdown
-[]: # Path: README.md
+## (WIP) Vue-toastify for Vue3
 

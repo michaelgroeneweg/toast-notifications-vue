@@ -1,5 +1,5 @@
 {
-  "name": "toast-notifications-vue",
+  "name": "vue-toastify",
   "version": "1.0.0",
   "description": "This plugin provides toast notifications for your Vue.js application. It is easy to use and easy to configure.",
   "main": "src/index.ts",
