@@ -1,0 +1,32 @@
+{
+  "name": "toast-notifications-vue",
+  "version": "1.0.0",
+  "description": "This plugin provides toast notifications for your Vue.js application. It is easy to use and easy to configure.",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+  },
+  "keywords": [
+    "toast",
+    "notifications",
+    "vue"
+  ],
+  "author": "Michael Groeneweg",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.3",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.4",
+    "vitest": "^0.21.0",
+    "vue": "^3.2.37",
+    "vue-tsc": "^0.39.5"
+  }
+}
