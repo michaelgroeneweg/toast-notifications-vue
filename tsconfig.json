@@ -3,10 +3,13 @@
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
+    "rootDir": "./src",
     "moduleResolution": "Node",
+    "baseUrl": "./src",
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
+    "outDir": "./dist",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -14,5 +17,7 @@
     "skipLibCheck": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": [
+    "**/node_modules",
+  ]
 }
