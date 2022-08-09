@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.#{$vt-toast-namespace}__progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.25rem;
+  width: 100%;
+  background-color: red;
+  animation: progress var(--toast-duration) ease-in-out forwards;
+}

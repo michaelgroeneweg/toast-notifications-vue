@@ -1,0 +1,64 @@
+@use '../abstracts' as *;
+
+.#{$vt-toast-namespace} {
+  background-color: $vt-toast-bg-color;
+  border-top-left-radius: $vt-toast-border-radius;
+  border-top-right-radius: $vt-toast-border-radius;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 13px 25px -12px;
+  position: relative;
+  overflow: hidden;
+  min-height: 7em;
+  display: grid;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: .825rem;
+  width: content-box;
+
+  &__container {
+    padding: $vt-toast-content-padding;
+    display: flex;
+    flex-flow: row;
+    color: #54565A;
+    line-height: 1;
+    align-items: flex-start;
+  }
+
+  &__button {
+    outline: none;
+    border: none;
+    background-color: unset;
+    position: absolute;
+    top: 0.5em;
+    right: 0.225em;
+
+    & > * {
+      color: #54565A;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__icon {
+    margin-block-start: 1em;
+    margin-inline-end: 1.6em;
+    & > * {
+      color: #919191;
+    }
+  }
+
+  &__content {
+    line-height: 1.5;
+  }
+
+  &__title {
+    font-weight: 500;
+    color: #54565A;
+  }
+
+  &__message {
+    font-size: .75rem;
+    color: #6f7279;
+  }
+}

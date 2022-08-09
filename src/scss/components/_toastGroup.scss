@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+.#{$vt-toast-namespace}-move,
+.#{$vt-toast-namespace}-enter-active,
+.#{$vt-toast-namespace}-leave-active {
+  transition: all 0.3s ease;
+}
+
+.#{$vt-toast-namespace}-enter-from,
+.#{$vt-toast-namespace}-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.#{$vt-toast-namespace}__grid-container {
+  position: fixed;
+  margin: 1.5rem;
+  display: flex;
+  flex-flow: column;
+  gap: 1.5rem;
+  z-index: 9999;
+  width: 30rem;
+}
+
+
+.#{$vt-toast-namespace} {
+
+  &--top-right {
+    top: 0;
+    right: 0;
+  }
+
+  &--top-right {
+    top: 0;
+    left: 0;
+  }
+}
